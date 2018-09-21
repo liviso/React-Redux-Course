@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import PickSeats from './PickSeats';
 
 class Checkout extends Component{
+
+
+
+  checkout = () => {
+    console.log("Checking out");
+  }
     render (){
       return <div>
         <PickSeats/>
@@ -31,7 +37,7 @@ class Checkout extends Component{
           </tr>
           </tbody>
         </table>
-        <button>Purchase</button>
+        <button onClick={this.checkout}>Purchase</button>
         <a href="">Keep shopping</a>
       </div>
     }
